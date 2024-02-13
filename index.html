@@ -22,7 +22,23 @@
     <!-- main part -->
     <main class="lg:container mx-auto flex justify-between">
         <!-- Shapes container -->
-        <div></div>
+        <div>
+            <!-- Triangle -->
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+                <figure><img src="./images/triangle.png" alt="Triangle" /></figure>
+                <div class="card-body space-y-2">
+                  <h2 class="text-center text-2xl font-bold">Triangle</h2>
+                  <p class="text-center text-xl">Area (A) = 0.5 × b × h</p>
+                  <div class="text-center">
+                    <input type="text" placeholder="b" class="input input-sm border-none bg-slate-100 w-24 max-w-xs" /> <span class="ml-1">cm</span>
+                    <input type="text" placeholder="h" class="input input-sm border-none bg-slate-100 w-24 ml-4 max-w-xs" /> <span class="ml-1">cm</span>
+                  </div>
+                  <div class="card-actions">
+                    <button class="btn btn-info mt-5 w-full text-xl text-white">Calculate</button>
+                  </div>
+                </div>
+              </div>
+        </div>
         <!-- Area calculation -->
         <div class="w-96 border p-4">
             <h3>Area Calculation</h3>

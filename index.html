@@ -20,11 +20,11 @@
 
     </header>
     <!-- main part -->
-    <main class="lg:container mx-auto flex justify-between">
+    <main class="lg:container mx-auto flex justify-between mb-10">
         <!-- Shapes container -->
-        <div>
+        <div class="grid grid-cols-1 lg:grid-cols-3  gap-3">
             <!-- Triangle -->
-            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <div class="card card-compact w-80 bg-base-100 shadow-sm border pt-3 rounded-md">
                 <figure><img src="./images/triangle.png" alt="Triangle" /></figure>
                 <div class="card-body space-y-2">
                   <h2 class="text-center text-2xl font-bold">Triangle</h2>
@@ -37,11 +37,86 @@
                     <button class="btn btn-info mt-5 w-full text-xl text-white">Calculate</button>
                   </div>
                 </div>
-              </div>
+            </div>
+            <!-- Rectangle -->
+            <div class="card card-compact w-80 bg-base-100 shadow-sm border pt-3 rounded-md">
+                <figure><img src="./images/rectangle.png" alt="Triangle" /></figure>
+                <div class="card-body space-y-2">
+                  <h2 class="text-center text-2xl font-bold">Rectangle</h2>
+                  <p class="text-center text-xl">Area (A) = w × l</p>
+                  <div class="text-center">
+                    <input type="text" placeholder="w" class="input input-sm border-none bg-slate-100 w-24 max-w-xs" /> <span class="ml-1">cm</span>
+                    <input type="text" placeholder="l" class="input input-sm border-none bg-slate-100 w-24 ml-4 max-w-xs" /> <span class="ml-1">cm</span>
+                  </div>
+                  <div class="card-actions">
+                    <button class="btn btn-info mt-5 w-full text-xl text-white">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            <!-- Parallelogram -->
+            <div class="card card-compact w-80 bg-base-100 shadow-sm border pt-3 rounded-md">
+                <figure><img src="./images/parallelogram.png" alt="Triangle" /></figure>
+                <div class="card-body space-y-2">
+                  <h2 class="text-center text-2xl font-bold">Parallelogram</h2>
+                  <p class="text-center text-xl">Area (A) = b × h</p>
+                  <div class="text-center">
+                    <input type="text" placeholder="b" class="input input-sm border-none bg-slate-100 w-24 max-w-xs" /> <span class="ml-1">cm</span>
+                    <input type="text" placeholder="h" class="input input-sm border-none bg-slate-100 w-24 ml-4 max-w-xs" /> <span class="ml-1">cm</span>
+                  </div>
+                  <div class="card-actions">
+                    <button class="btn btn-info mt-5 w-full text-xl text-white">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            <!-- Rhombus -->
+            <div class="card card-compact w-80 bg-base-100 shadow-sm border pt-3 rounded-md">
+                <figure><img src="./images/rhombus.png" alt="Triangle" /></figure>
+                <div class="card-body space-y-2">
+                  <h2 class="text-center text-2xl font-bold">Rhombus</h2>
+                  <p class="text-center text-xl">Area (A) = 0.5 × d<sub>1</sub> × d<sub>2</sub></p>
+                  <div class="text-center">
+                    <input type="text" placeholder="d1" class="input input-sm border-none bg-slate-100 w-24 max-w-xs" /> <span class="ml-1">cm</span>
+                    <input type="text" placeholder="d2" class="input input-sm border-none bg-slate-100 w-24 ml-4 max-w-xs" /> <span class="ml-1">cm</span>
+                  </div>
+                  <div class="card-actions">
+                    <button class="btn btn-info mt-5 w-full text-xl text-white">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            <!-- Pentagon -->
+            <div class="card card-compact w-80 bg-base-100 shadow-sm border pt-3 rounded-md">
+                <figure><img src="./images/pentagon.png" alt="Pentagon" /></figure>
+                <div class="card-body space-y-2">
+                  <h2 class="text-center text-2xl font-bold">Pentagon</h2>
+                  <p class="text-center text-xl">Area (A) = 0.5 × p × b</p>
+                  <div class="text-center">
+                    <input type="text" placeholder="p" class="input input-sm border-none bg-slate-100 w-24 max-w-xs" /> <span class="ml-1">cm</span>
+                    <input type="text" placeholder="b" class="input input-sm border-none bg-slate-100 w-24 ml-4 max-w-xs" /> <span class="ml-1">cm</span>
+                  </div>
+                  <div class="card-actions">
+                    <button class="btn btn-info mt-5 w-full text-xl text-white">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            <!-- Ellipse -->
+            <div class="card card-compact w-80 bg-base-100 shadow-sm border pt-3 rounded-md">
+                <figure><img src="./images/ellipse.png" alt="Ellipse" /></figure>
+                <div class="card-body space-y-2">
+                  <h2 class="text-center text-2xl font-bold">Ellipse</h2>
+                  <p class="text-center text-xl">Area (A) = ℼab </p>
+                  <div class="text-center">
+                    <input type="text" placeholder="a" class="input input-sm border-none bg-slate-100 w-24 max-w-xs" /> <span class="ml-1">cm</span>
+                    <input type="text" placeholder="b" class="input input-sm border-none bg-slate-100 w-24 ml-4 max-w-xs" /> <span class="ml-1">cm</span>
+                  </div>
+                  <div class="card-actions">
+                    <button class="btn btn-info mt-5 w-full text-xl text-white">Calculate</button>
+                  </div>
+                </div>
+            </div>
         </div>
         <!-- Area calculation -->
-        <div class="w-96 border p-4">
-            <h3>Area Calculation</h3>
+        <div class="w-72 border rounded-md p-4">
+            <h3 class="text-2xl font-bold text-center">Area Calculation</h3>
         </div>
     </main>
 </body>
